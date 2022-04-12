@@ -11,7 +11,7 @@ import About from "./components/pages/About";
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Router>
         <Layout>
           <Routes>

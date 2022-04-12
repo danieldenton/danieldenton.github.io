@@ -2,7 +2,11 @@
   background-color: rgb(31, 28, 28);
 }
 
-
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
 
 
 .navbar {
@@ -82,7 +86,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 23em;
   color: rgb(190, 10, 10);
   text-shadow: 1px 2px .1px #000000;
   text-align: center;
@@ -105,6 +108,32 @@ header {
   font-size: 3vh;
 }
 
+.project-names {
+  margin: 2vh;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 45vh;
+  width: 44vw;
+  margin: 2vh;
+  border: solid black 2px;
+}
+
+#dil {
+  float: left;
+}
+
+#crypto {
+  float: left;
+}
+
+#oz {
+  float: left;
+}
+
 
 
 
@@ -115,20 +144,7 @@ header {
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
