@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 export default function Navbar() {
   return (
     <div className="navbar">
@@ -8,7 +9,11 @@ export default function Navbar() {
       <Link to="/about" className="navbar-link">
         About
       </Link>
-      <h3 className="navbar-link">Resume</h3>
+      <div id="resume">
+        <a className="resume-link" href="DanielDentonResume.pdf" download>
+          download a resume
+        </a>
+      </div>
     </div>
   );
 }
