@@ -23,7 +23,7 @@ export default function Home() {
           </a>
         </div>
         <div id="crypto">
-          <h5 className="project-names">Cypto Watch</h5>
+          <h5 className="project-names">Crypto Watch</h5>
           <a href="https://yourcryptowatch.herokuapp.com/" target="_blank">
             <img src={cryptoImg} alt="Crypto Watch" className="projects" />
           </a>
