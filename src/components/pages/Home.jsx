@@ -4,6 +4,11 @@ import nodeImg from "../../assets/node.png";
 import dilImg from "../../assets/dil.png";
 import cryptoImg from "../../assets/crypto.png";
 import ozImg from "../../assets/oz.png";
+import dcdImg from "../../assets/dcd.png";
+import pythonImg from "../../assets/python.jpeg";
+import djangoImg from "../../assets/django.jpeg";
+import htmlImg from "../../assets/html5.jpeg";
+import cssImg from "../../assets/css.png";
 
 export default function Home() {
   return (
@@ -13,9 +18,19 @@ export default function Home() {
         <img src={reactImg} alt="React.js" className="logos" />
         <img src={javascriptImg} alt="Javascript" className="logos" />
         <img src={nodeImg} alt="Node.js" className="logos" />
+        <img src={pythonImg} alt="Python" className="logos" />
+        <img src={djangoImg} alt="Django" className="logos" />
+        <img src={htmlImg} alt="HTML5" className="logos" />
+        <img src={cssImg} alt="CSS3" className="logos" />
       </div>
       <div className="projects-div">
         <h2 className="page-header">Recent Projects</h2>
+        <div id="dcd">
+          <h5 className="project-names">Deep Cut Discovery</h5>
+          {/* <a href="" target="_blank"> */}
+          <img src={dcdImg} alt="Deep Cut Discovery" className="projects" />
+          {/* </a> */}
+        </div>
         <div id="dil">
           <h5 className="project-names">A Day in the Life</h5>
           <a href="https://preeminent-swan-c5baf2.netlify.app/" target="_blank">

@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div>
+    <div className="about">
       <p className="bio">
         Daniel Denton is a software engineer who completed General Assembly's
         Software Engineering Emmersive in 2022. He has a background as a working

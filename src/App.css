@@ -19,7 +19,7 @@
 }
 
 .navbar-link {
-  color: rgb(190, 10, 10);
+  color: rgb(13, 86, 211);
   text-shadow: 1px 1px .5px #000000;
   text-decoration: none;
   font-size: 4vh;
@@ -39,7 +39,7 @@
   background-color: rgb(20, 18, 18);
   box-shadow: .5px .5px 5px #000000;
   height: 3em;
-  color: rgb(190, 10, 10);
+  color: rgb(13, 86, 211);
   text-shadow: 1px 1px .5px #000000;
   text-decoration: none;
   font-size: 2.5vh;
@@ -48,7 +48,7 @@
 }
 
 .github-link {
-  color: rgb(190, 10, 10);
+  color: rgb(13, 86, 211);
   text-shadow: 1px 1px .5px #000000;
   text-decoration: none;
   font-size: 2.5vh;
@@ -62,13 +62,13 @@
 }
 
 header {
-  color: rgb(190, 10, 10);
+  color: rgb(13, 86, 211);
   text-shadow: 1px 2px .1px #000000;
   text-align: center;
 }
 
 .dd {
-  font-size: 3em;
+  font-size: 2.5em;
   margin: 2vh
 }
 
@@ -78,7 +78,7 @@ header {
 }
 
 .page-header {
-  font-size: 4vh;
+  font-size: 3.5vh;
 }
 
 
@@ -86,7 +86,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  color: rgb(190, 10, 10);
+  color: rgb(13, 86, 211);
   text-shadow: 1px 2px .1px #000000;
   text-align: center;
 }
@@ -122,19 +122,29 @@ header {
   border: solid black 2px;
 }
 
-#dil {
+.project:hover {
+  color: rgb(181, 181, 76);
+}
+
+#dcd {
   float: left;
 }
 
+#dil {
+  float: right;
+}
+
 #crypto {
-  float: left;
+  float: right;
 }
 
 #oz {
   float: left;
 }
 
-
+.about {
+  height: 65vh;
+}
 
 
 
