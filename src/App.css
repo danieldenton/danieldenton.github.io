@@ -1,5 +1,5 @@
 :root {
-  background-color: rgb(58, 50, 66);
+  background-color: rgba(1, 1, 11, 0.968);
 }
 
 .home {
@@ -13,16 +13,15 @@
   display: flex;
   justify-content: space-around;
   align-items:center;
-  background-color: rgb(21, 4, 37);
-  box-shadow: .5px .5px 5px #000000;
-  height: 2em;
+  background-color:rgba(1, 1, 11, 0.968);
+  height: 3em;
 }
 
 .navbar-link {
   color: rgb(16, 177, 241);
   text-shadow: 1px 1px .5px #000000;
   text-decoration: none;
-  font-size: 4vh;
+  font-size: 3vh;
   font-style: normal;
   font-weight: 650;
 }
@@ -31,9 +30,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   background-color: rgb(16, 177, 241);
-  width: 10vw;
-  height: 6vh;
+  width: 6em;
+  height: 2.7em;
   text-align: center;
   border-radius: 0.75em;
 }
@@ -47,11 +47,12 @@
 }
 
 .resume-link:hover {
-  color: white;
+  color: rgb(245, 245, 82);
+  text-shadow: 1px 1px .5px #000000;
 }
 
 .navbar-link:hover{
-  color: rgb(239, 239, 149);
+  color: rgb(245, 245, 82);
   text-shadow: 1px 1px .5px #000000;
 }
 
@@ -63,8 +64,8 @@ header {
 }
 
 .dd {
-  font-size: 2.5em;
-  margin: 4vh;
+  font-size: 5em;
+  margin: 6vh;
   color: rgb(175, 78, 245);
 }
 
@@ -74,10 +75,10 @@ header {
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(20, 18, 18);
-  box-shadow: .5px .5px 5px #000000;
+  background-color: rgba(1, 1, 11, 0.968);
   height: 3em;
   color: rgb(16, 177, 241);
   text-shadow: 1px 1px .5px #000000;
@@ -98,19 +99,14 @@ header {
 }
 
 .github-link:hover{
-  color: rgb(239, 239, 149);
+  color: rgb(245, 245, 82);
   text-shadow: 1px 1px .5px #000000;
 }
-
-.page-header {
-  font-size: 4vh;
-}
-
 
 .main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   color: rgb(16, 177, 241);
   text-shadow: 1px 2px .1px #000000;
   text-align: center;
@@ -119,88 +115,87 @@ header {
 .page-header {
   color: rgb(175, 78, 245);
   font-size: 4vh;
+  margin-top: 12vh;
+}
+
+.skills-header {
+  color: rgb(175, 78, 245);
+  font-size: 4vh;
+  margin-top: 12vh;
 }
 
 .skills-div {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin: 5vh;
+  margin: 4vh;
 }
 
+
 .logos {
-  height: 15vh;
-  width: 15vh;
+  height: 12vh;
+  width: 12vh;
   border: 1px solid black;
-  margin: 4px;
+  margin: 8px;
 }
 
 .project-imgs-div {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   margin: 5vh;
 }
 
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 47vh;
-  width: 44vw;
+  height: 22em;
+  width: 40em;
   margin: 2vh;
   border: solid black 2px;
 }
 
 .projects:hover {
-  border: solid 2px rgb(175, 78, 245);
+  border: solid 2px rgb(245, 245, 82);
 }
 
 .project-names {
   margin: 3vh;
+  font-size: 3.3vh;;
 }
 
-#dcd {
-  float: left;
-}
-
-#dil {
-  float: right;
-}
-
-#crypto {
-  float: right;
-}
-
-#oz {
-  float: left;
+.created-with {
+  font-size: 2.4vh;
+  text-shadow: 1px 1px .5px #000000;
+  font-weight: 600;
 }
 
 .bio {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(239, 239, 149);
+  color: rgb(16, 177, 241);
   font-size: 3vh;
   font-weight: 550;
   width: 60%;
 }
 
 #email {
-  margin: 1px;
-  color: rgb(239, 239, 149);
+  margin: 2vh;
+  color: rgb(16, 177, 241);
+  font-size: 3.5vh;
 }
 
 #linkedin {
   text-decoration: none;
-  color: rgb(239, 239, 149);
+  color: rgb(16, 177, 241);
   font-weight: 650;
   font-size: 3.5vh;
-  margin: 2px;
+  margin-bottom: 4vh;
 }
 
 #linkedin:hover {
-  color: rgb(16, 177, 241);
+  color: rgb(245, 245, 82);
 }
 
 .about {

@@ -1,3 +1,5 @@
+import Contact from "../Contact";
+
 export default function About() {
   return (
     <div className="about">
@@ -10,17 +12,8 @@ export default function About() {
         counted on to bring whatever creative piece is needed to complete the
         puzzle.
       </p>
-      <h2 className="page-header">Contact</h2>
-      <div id="contact-div">
-        <h5 id="email">DanielMDenton@gmail.com</h5>
-        <a
-          href="https://www.linkedin.com/in/danielmdenton/"
-          alt="linkedin.com"
-          id="linkedin"
-        >
-          LinkedIn
-        </a>
-      </div>
+
+      <Contact />
     </div>
   );
 }
