@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="footer">
-      <p>© Daniel Denton 2022</p>
+      <p>© DD 2022</p>
       <div>
         <a
           target="_blank"
