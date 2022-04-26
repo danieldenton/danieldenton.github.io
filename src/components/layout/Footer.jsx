@@ -12,7 +12,7 @@ export default function Footer() {
           Github
         </a>
       </div>
-      <p>Portfolio created in React.js</p>
+      <p id="created">portfolio created in React.js</p>
     </footer>
   );
 }

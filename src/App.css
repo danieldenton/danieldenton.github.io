@@ -103,6 +103,10 @@ header {
   text-shadow: 1px 1px .5px #000000;
 }
 
+#created {
+  font-size: .7em;
+}
+
 .main {
   display: flex;
   flex-wrap: wrap;
