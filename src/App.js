@@ -39,7 +39,7 @@ export default function App() {
     {
       name: "Deep Cut Discovery",
       image: dcdImg,
-      link: "",
+      link: "https://deepcutdiscovery.netlify.app",
       createdWith: "MongoDB, Express.js, React.js, Node.js",
     },
     {
