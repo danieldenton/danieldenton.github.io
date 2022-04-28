@@ -89,22 +89,9 @@ header {
   margin-top: 4vh;
 }
 
-.github-link {
-  color: rgb(16, 177, 241);
-  text-shadow: 1px 1px .5px #000000;
-  text-decoration: none;
-  font-size: 2.5vh;
-  font-style: normal;
-  font-weight: 650;
-}
-
-.github-link:hover{
-  color: rgb(245, 245, 82);
-  text-shadow: 1px 1px .5px #000000;
-}
 
 #created {
-  font-size: .7em;
+  font-size: 1em;
 }
 
 .main {
