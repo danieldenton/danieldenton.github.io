@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import resume from "../../assets/DanielDentonResume.pdf";
 
 export default function Navbar() {
   return (
@@ -20,9 +21,9 @@ export default function Navbar() {
         </a>
       </div>
       <div id="resume">
-        <a className="resume-link" href="DanielDentonResume.pdf" download>
+        <Link className="resume-link" to={resume} download>
           download a resume
-        </a>
+        </Link>
       </div>
     </div>
   );
