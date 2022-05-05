@@ -10,6 +10,9 @@ export default function Navbar() {
       <Link to="/about" className="navbar-link">
         About
       </Link>
+      <Link to="/projects" className="navbar-link">
+        Recent Projects
+      </Link>
       <div>
         <a
           target="_blank"

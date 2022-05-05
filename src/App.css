@@ -1,5 +1,7 @@
+
 :root {
-  background-color: rgba(1, 1, 11, 0.968);
+  background-color: rgba(1, 1, 11, 0.897);
+  color: rgba(255, 255, 255, 0.699);
 }
 
 .home {
@@ -11,19 +13,20 @@
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items:center;
-  background-color:rgba(1, 1, 11, 0.968);
   height: 3em;
 }
 
 .navbar-link {
-  color: rgb(16, 177, 241);
-  text-shadow: 1px 1px .5px #000000;
+  color: rgba(255, 255, 255, 0.699);
+  text-shadow: 2px 2px .5px #000000;
   text-decoration: none;
-  font-size: 3vh;
+  font-size: 1.2em;
   font-style: normal;
   font-weight: 650;
+  
 }
 
 #resume {
@@ -31,7 +34,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: rgb(16, 177, 241);
+  background-color: rgba(255, 255, 255, 0.699);
   width: 6em;
   height: 2.7em;
   text-align: center;
@@ -41,36 +44,35 @@
 .resume-link {
   color: black;
   text-decoration: none;
-  font-size: 2vh;
+  font-size: 0.9em;
   font-style: normal;
   font-weight: 650;
 }
 
 .resume-link:hover {
-  color: rgb(245, 245, 82);
-  text-shadow: 1px 1px .5px #000000;
+  color: white;
+  text-shadow: 2px 2px .5px #000000;
 }
 
 .navbar-link:hover{
-  color: rgb(245, 245, 82);
-  text-shadow: 1px 1px .5px #000000;
+  color: white;
 }
 
 header {
-  color: rgb(16, 177, 241);
-  text-shadow: 1px 2px .1px #000000;
+  text-shadow: 2px 2px .1px #000000;
   text-align: center;
   margin: 2vh;
 }
 
 .dd {
+  color: rgba(255, 255, 255, 0.699);
   font-size: 5em;
-  margin: 6vh;
-  color: rgb(175, 78, 245);
+  margin-top: .8em;
+  
 }
 
 .sub-header {
-  font-size: 3.5vh;
+  font-size: 3.2em;
 }
 
 .footer {
@@ -78,10 +80,9 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(1, 1, 11, 0.968);
   height: 3em;
-  color: rgb(16, 177, 241);
-  text-shadow: 1px 1px .5px #000000;
+  color: rgba(255, 255, 255, 0.699);
+  text-shadow: 2px 2px .5px #000000;
   text-decoration: none;
   font-size: 2.5vh;
   font-style: normal;
@@ -98,21 +99,14 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  color: rgb(16, 177, 241);
+  color: rgba(255, 255, 255, 0.699);
   text-shadow: 1px 2px .1px #000000;
   text-align: center;
 }
 
 .page-header {
-  color: rgb(175, 78, 245);
-  font-size: 4vh;
-  margin-top: 12vh;
-}
-
-.skills-header {
-  color: rgb(175, 78, 245);
-  font-size: 4vh;
-  margin-top: 12vh;
+  font-size: 3em;
+  margin-top: .5em;
 }
 
 .skills-div {
@@ -129,7 +123,16 @@ header {
   height: 12vh;
   width: 12vh;
   border: 1px solid black;
+  box-shadow: 3px 3px .1px #000000;
   margin: 8px;
+  border-radius: 0.25em;
+}
+
+.project-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .project-imgs-div {
@@ -147,25 +150,52 @@ header {
 }
 
 .projects:hover {
-  border: solid 2px rgb(245, 245, 82);
+  border: solid 2px white;
 }
 
 .project-names {
-  margin: 3vh;
-  font-size: 3.3vh;;
+  margin-top: 1em;
+  margin-bottom: .3em;
+  font-size: 2.4em;
+}
+
+.project-github {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.699);
+  width: 11em;
+  height: 1.5em;
+  text-align: center;
+  border-radius: 1em;
+}
+
+.github-link {
+  color: black;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 650;
+  text-shadow: none;
+}
+
+.github-link:hover {
+  color: white;
+  text-shadow: 1px 1px .5px #000000;
 }
 
 .created-with {
   font-size: 2.4vh;
   text-shadow: 1px 1px .5px #000000;
   font-weight: 600;
+  margin-top: .01em;
 }
 
 .bio {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(16, 177, 241);
+  color: rgba(255, 255, 255, 0.699);
   font-size: 3vh;
   font-weight: 550;
   width: 60%;
@@ -173,20 +203,20 @@ header {
 
 #email {
   margin: 2vh;
-  color: rgb(16, 177, 241);
+  color: rrgba(119, 204, 207, 0.867);
   font-size: 3.5vh;
 }
 
 #linkedin {
   text-decoration: none;
-  color: rgb(16, 177, 241);
+  color: rgba(255, 255, 255, 0.699);
   font-weight: 650;
   font-size: 3.5vh;
   margin-bottom: 4vh;
 }
 
 #linkedin:hover {
-  color: rgb(245, 245, 82);
+  color: white;
 }
 
 .about {

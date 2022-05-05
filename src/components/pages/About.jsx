@@ -3,7 +3,7 @@ import Contact from "../Contact";
 export default function About() {
   return (
     <div className="about">
-      <h2 className="page-header">Bio</h2>
+      <h2 className="page-header">About</h2>
       <p className="bio">
         Daniel Denton is a software engineer who completed General Assembly's
         Software Engineering Immersive in 2022. He has a background as a working
