@@ -42,7 +42,7 @@ export default function App() {
     {
       name: "A Day in the Life",
       image: dilImg,
-      link: "https://preeminent-swan-c5baf2.netlify.app/",
+      link: "https://dayinthelife.netlify.app",
       github: "https://github.com/danieldenton/day-in-life-client",
       createdWith: "MongoDB, Express.js, React.js, Node.js",
     },
