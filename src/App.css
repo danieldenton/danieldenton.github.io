@@ -110,8 +110,8 @@ header {
 .main {
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
   font-family: 'Barlow Semi Condensed';
+  border: red solid 1px;
 }
 
 .home {
@@ -119,6 +119,7 @@ header {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  border: red solid 1px;
 }
 
 .page-header {
@@ -152,6 +153,7 @@ header {
 #postgresql {
   height: 4em;
   margin-top: .8em;
+  margin-left: .5em;
 }
 
 .skill-label {
