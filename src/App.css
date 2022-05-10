@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
 
 :root {
-  background-color: rgba(1, 1, 11, 0.897);
-  color: rgba(255, 255, 255, 0.699);
+  background-color: black;
+  color: white;
 }
 
 .home {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 80%;
 }
 
@@ -16,12 +17,12 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items:center;
-  height: 3em;
+  height: 3em, 1em;
+  font-family: 'Barlow Semi Condensed';
 }
 
 .navbar-link {
-  color: rgba(255, 255, 255, 0.699);
-  text-shadow: 2px 2px .5px #000000;
+  color: white;
   text-decoration: none;
   font-size: 1.2em;
   font-style: normal;
@@ -34,7 +35,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.699);
+  background-color: white;
   width: 6em;
   height: 2.7em;
   text-align: center;
@@ -49,30 +50,46 @@
   font-weight: 650;
 }
 
-.resume-link:hover {
-  color: white;
-  text-shadow: 2px 2px .5px #000000;
+#resume:hover {
+  background-color: red;
 }
 
 .navbar-link:hover{
-  color: white;
+  color: red;
 }
 
 header {
-  text-shadow: 2px 2px .1px #000000;
-  text-align: center;
-  margin: 2vh;
+  padding: 4.5em;
+  padding-top: 2em;
 }
 
 .dd {
-  color: rgba(255, 255, 255, 0.699);
-  font-size: 5em;
+  margin: 0;
+  font-size: 3em;
   margin-top: .8em;
-  
+  font-family: 'Barlow Semi Condensed';
 }
 
 .sub-header {
-  font-size: 3.2em;
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: 'Barlow Semi Condensed';
+}
+
+.top {
+  border: solid red 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 4.5em;
+  color: white;
+  height: 20em;
+  border-radius: 50rem;
+  font-family: 'Barlow Semi Condensed';
 }
 
 .footer {
@@ -81,52 +98,107 @@ header {
   justify-content: space-around;
   align-items: center;
   height: 3em;
-  color: rgba(255, 255, 255, 0.699);
-  text-shadow: 2px 2px .5px #000000;
   text-decoration: none;
   font-size: 1.2em;
   font-style: normal;
   font-weight: 650;
   margin-top: 4vh;
+  font-family: 'Barlow Semi Condensed';
 }
 
-
-#created {
-  font-size: 1em;
-}
 
 .main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  color: rgba(255, 255, 255, 0.699);
-  text-shadow: 1px 2px .1px #000000;
   text-align: center;
+  font-family: 'Barlow Semi Condensed';
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .page-header {
-  font-size: 3em;
+  font-size: 2.5em;
   margin-top: .5em;
+  font-family: 'Barlow Semi Condensed';
 }
 
 .skills-div {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
-  margin: 4vh;
+  width: 28em;
+  height: 22em;
+  margin-left: 3em;
 }
 
 
-.logos {
-  height: 12vh;
-  width: 12vh;
-  border: 1px solid black;
-  box-shadow: 3px 3px .1px #000000;
-  border-radius: 0.25em;
-  margin: 8px;
+.skills {
+ font-size: 4em;
+ padding: 0.30em;
 }
+
+#mongo {
+  height: 4em;
+  margin-top: .8em;
+}
+
+#postgresql {
+  height: 4em;
+  margin-top: 1.1em;
+}
+
+.skill-label {
+  font-size: .27em;
+}
+
+.postgresql-label {
+  font-size: 1.1em
+}
+
+.mongo-label {
+  font-size: 1.1em;
+}
+
+.right-home {
+ display: flex;
+ flex-wrap: wrap;
+ width: 18em;
+ margin-left: 25em;
+}
+
+
+.github {
+  text-decoration: none;
+  color: white;
+  font-size: 7em;
+  margin: 1rem;
+  height: 1em;
+}
+
+.github:hover {
+  color: red;
+  text-shadow: 1px 1px .5px #000000;
+}
+.linkedin {
+  text-decoration: none;
+  color: white;
+  font-size: 7em;
+  margin: 1rem;
+  height: 1em;
+}
+
+.linkedin:hover {
+  color: red;
+  text-shadow: 1px 1px .5px #000000;
+}
+
 
 .project-div {
   display: flex;
@@ -152,7 +224,7 @@ header {
 }
 
 .projects:hover {
-  border: solid 2px rgba(255, 255, 255, 0.699);
+  border: solid 2px rgba(255, 255, 255, 0.853);
 }
 
 .project-names {
@@ -166,59 +238,46 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.699);
+  background-color: white;
   width: 11em;
   height: 1.5em;
   text-align: center;
   border-radius: 1em;
 }
 
-.github-link {
-  color: black;
-  text-decoration: none;
-  font-size: 1em;
-  font-weight: 650;
-  text-shadow: none;
-}
-
-.github-link:hover {
-  color: white;
-  text-shadow: 1px 1px .5px #000000;
-}
-
-.created-with {
-  font-size: 2.4vh;
-  text-shadow: 1px 1px .5px #000000;
-  font-weight: 600;
-  margin-top: .01em;
+.about-div {
+  border: solid red 1px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 20em;
+  height: 22em;
 }
 
 .bio {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgba(255, 255, 255, 0.699);
   font-size: 3vh;
   font-weight: 550;
   width: 60%;
 }
 
 #email {
-  margin: 2vh;
-  color: rrgba(119, 204, 207, 0.867);
-  font-size: 3.5vh;
+  margin: 1em;
+  font-size: 2em;
+  margin-left: 13em;
 }
 
 #linkedin {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.699);
+  color: black;
   font-weight: 650;
-  font-size: 3.5vh;
+  font-size: 5em;
   margin-bottom: 4vh;
 }
 
 #linkedin:hover {
-  color: white;
+  color: red;
 }
 
 .about {

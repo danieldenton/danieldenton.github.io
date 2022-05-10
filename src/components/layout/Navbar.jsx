@@ -13,16 +13,6 @@ export default function Navbar() {
       <Link to="/projects" className="navbar-link">
         Recent Projects
       </Link>
-      <div>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/danieldenton"
-          className="navbar-link"
-        >
-          Github
-        </a>
-      </div>
       <div id="resume">
         <Link className="resume-link" to={resume} download>
           download a resume
