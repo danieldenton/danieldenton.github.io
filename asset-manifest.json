@@ -1,29 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.f305a0e0.css",
-    "main.js": "/static/js/main.5ade6468.js",
+    "main.css": "/static/css/main.6392526d.css",
+    "main.js": "/static/js/main.f94b4e21.js",
     "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
     "static/media/oz.png": "/static/media/oz.553ddd6e16d81abbece8.png",
     "static/media/dil.png": "/static/media/dil.bbd06cec717d6d70a04c.png",
     "static/media/dcd.png": "/static/media/dcd.cd9cf0f366e50518e51d.png",
     "static/media/crypto.png": "/static/media/crypto.88540347a8889e8d2628.png",
-    "static/media/react.png": "/static/media/react.6a7dbaaeb30773f98b36.png",
-    "static/media/node.png": "/static/media/node.7558ddc6566c5a93326a.png",
-    "static/media/postgres.png": "/static/media/postgres.f37ccd9fe52472a2fce5.png",
-    "static/media/mongodb.png": "/static/media/mongodb.9e7b8c0f7904298170ca.png",
-    "static/media/javascript.png": "/static/media/javascript.ff79a740e259711961ba.png",
-    "static/media/DanielDentonResume.pdf": "/static/media/DanielDentonResume.7190fa733cee1661d8ac.pdf",
-    "static/media/python.jpeg": "/static/media/python.f1e4837790868c822ea9.jpeg",
-    "static/media/django.jpeg": "/static/media/django.4c399895f677cd3bfbc8.jpeg",
-    "static/media/html5.jpeg": "/static/media/html5.9dd9e3d218fae783bb3f.jpeg",
-    "static/media/css.png": "/static/media/css.b75a289cfc5f08ea4221.png",
+    "static/media/DanielDentonResume.pdf": "/static/media/DanielDentonResume.33907d27f5c236079a54.pdf",
     "index.html": "/index.html",
-    "main.f305a0e0.css.map": "/static/css/main.f305a0e0.css.map",
-    "main.5ade6468.js.map": "/static/js/main.5ade6468.js.map",
+    "main.6392526d.css.map": "/static/css/main.6392526d.css.map",
+    "main.f94b4e21.js.map": "/static/js/main.f94b4e21.js.map",
     "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f305a0e0.css",
-    "static/js/main.5ade6468.js"
+    "static/css/main.6392526d.css",
+    "static/js/main.f94b4e21.js"
   ]
 }
