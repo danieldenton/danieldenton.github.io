@@ -6,11 +6,12 @@ export default function About() {
     <div className="about">
       <div className="about-div">
         <p className="bio">
-          Skilled software engineer seeking opportunities in Full Stack
-          development. Whether launching a project or seeing it to completion,
-          working with a team or independently, cumulative skill-sets support
-          quality outcomes with a drive to balance the technical with the
-          creative.
+          Daniel Denton is a software developer who completed General Assembly's
+          Software Engineering Immersive in 2022. Whether launching a project or
+          seeing it to completion, working with a team or independently,
+          cumulative skill-sets support quality outcomes with a drive to balance
+          the technical with the creative. He also has a background as a working
+          musician as well as a yoga and meditation teacher.
         </p>
       </div>
     </div>
