@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: black;
   color: white;
+  position: relative
 }
 
 .everything-center {
@@ -213,7 +218,7 @@ padding-left: 2em;
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
-  width: 28em;
+  max-width: 28em;
   height: 22em;
   margin: 2em;
   animation: fadeIn 2s;
@@ -302,7 +307,7 @@ padding-left: 2em;
 
 .projects {
   height: 16.5em;
-  width: 30em;
+  max-width: 30em;
   margin: 1em;
   border: solid black 2px;
   border-radius: 1em;
@@ -326,13 +331,16 @@ padding-left: 2em;
  color: white;
  font-size: 3.5em;
   text-align: center;
-  border-radius: 1em;
+  border-radius: 2em;
 }
 
 .project-github-link:hover {
   color: rgb(234, 255, 0);
 }
 
+#oz {
+ margin-top: 1em;
+}
 
 
 

@@ -8,6 +8,7 @@ export default function ProjectsPage({ projects }) {
   return (
     <div className="projects-div">
       <div className="project-imgs-div">{projectDivs}</div>
+      <p id="oz">Images of Return to Oz from the 1985 film</p>
     </div>
   );
 }
