@@ -1,8 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
 
-:root {
+body {
   background-color: black;
   color: white;
+}
+
+.everything-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .everything-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+.everything {
+  max-width: 1110px;
 }
 
 .layout {
@@ -22,7 +41,7 @@
 .navbar-link {
   color: white;
   text-decoration: none;
-  font-size: 1.2em; 
+  font-size: 1.3em; 
 }
 
 #resume {
@@ -40,60 +59,86 @@
 .resume-link {
   color: black;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 #resume:hover {
-  background-color: red;
+  background-color: rgb(234, 255, 0);
 }
 
 .navbar-link:hover{
-  color: red;
+  color: rgb(234, 255, 0);
 }
 
 .header-div {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-  flex-direction: row;
-  width: 100vw;
   font-family: 'Barlow Semi Condensed';
+  margin-top: 3em;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow Semi Condensed';
+    padding: 2rem;
+  }
 }
 
 .right-header {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  width: 13em;
-  height: 1.2em;
-  padding: 5em;
-  padding-top: 5.3em;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 2em;
+  padding-right: 2em;
 }
 
-.right-links {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 1em;
-  width: 20em;
-  height: 6em;
-  margin-top: .1em;
-  margin-bottom: .1em;
- }
+@media only screen and (max-width: 600px) {
+  .right-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-top: 1em;
+  }
+}
+
+.right-links,
+#email {
+  text-align: center;
+}
+
+#email {
+  font-size: 1.5em;
+  margin: 0;
+}
 
 
 header {
-  padding: 5em;
-  padding-top: 2em;
-  height: 8em;
-  width: 12em;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding-top: 2em;
+padding-left: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    }
 }
 
 .dd {
   margin: 0;
   font-size: 3em;
-  margin-top: .9em;
   font-family: 'Barlow Semi Condensed';
 }
 
@@ -106,39 +151,35 @@ header {
 .github {
   text-decoration: none;
   color: white;
-  font-size: 5em;
+  font-size: 3.5em;
   margin-right: 0.25em;
 }
 
 .github:hover {
-  color: red;
+  color: rgb(234, 255, 0);
   text-shadow: 1px 1px .5px #000000;
 }
 
 .linkedin {
   text-decoration: none;
   color: white;
-  font-size: 5em;
+  font-size: 3.5em;
   height: 1em;
 }
 
 .linkedin:hover {
-  color: red;
+  color: rgb(234, 255, 0);
   text-shadow: 1px 1px .5px #000000;
 }
 
-#email {
-  font-size: 1.5em;
-  padding-right: .7em;;
-  margin-top: .3em;
-}
+
 
 .footer {
   display: flex;
   justify-content: flex-end;
   color: white;
   height: 3em;
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: 'Barlow Semi Condensed';
   margin-right: 3em;
   margin-top: 1.5em;
@@ -147,15 +188,17 @@ header {
 
 .main {
   font-family: 'Barlow Semi Condensed';
-  width: 100%;
+  text-align: center;
+  width: 100vw;
 }
 
 .home { 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
-  width: 100vw;
+  width: 100%;
+  margin-top: 3em;
 }
 
 .page-header {
@@ -172,9 +215,9 @@ header {
   flex-direction: row;
   width: 28em;
   height: 22em;
-  margin: 3em;
+  margin: 2em;
+  animation: fadeIn 2s;
 }
-
 
 .skills {
   display: flex;
@@ -208,36 +251,40 @@ header {
   margin-top: .7em;
 }
 
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
-  height: 22em;
-}
-
 .about-div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 30em;
+  width: 15em;
   height: 16em;
   margin: 5em;
-  /* border: red solid 1px; */
 }
 
 .bio {
   display: flex;
   justify-content: center;
   align-items: center;
+  word-wrap: normal;
   font-size: 1.5em;
-  /* border: red solid 1px; */
+  padding: 20px;
+  margin-top: 4em;
+  animation: fadeIn 2s;
 }
 
 .projects-div {
   margin-top: 3em;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .project-div {
@@ -245,7 +292,6 @@ header {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: 2em;
 }
 
 .project-imgs-div {
@@ -263,13 +309,17 @@ header {
 }
 
 .projects:hover {
-  border: solid 2px white;
+  border: solid 2px rgb(234, 255, 0);
 }
 
 .project-names {
   margin-top: 1em;
   margin-bottom: .3em;
-  font-size: 2.4em;
+  font-size: 1.5em;
+}
+
+.created-with {
+  font-size: 1.3em;
 }
 
 .project-github-link {
@@ -280,7 +330,7 @@ header {
 }
 
 .project-github-link:hover {
-  color: red;
+  color: rgb(234, 255, 0);
 }
 
 

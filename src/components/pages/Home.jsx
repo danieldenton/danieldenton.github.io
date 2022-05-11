@@ -1,5 +1,3 @@
-import Github from "../Github";
-import LinkedIn from "../LinkedIn";
 import mongo from "../../assets/mongo.png";
 import postgresql from "../../assets/postgresql.png";
 
