@@ -6,8 +6,7 @@ export default function ProjectsPage({ projects }) {
   });
 
   return (
-    <div id="projects-div">
-      <h2 className="page-header">Recent Projects</h2>
+    <div className="projects-div">
       <div className="project-imgs-div">{projectDivs}</div>
     </div>
   );

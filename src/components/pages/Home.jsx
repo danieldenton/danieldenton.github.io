@@ -3,11 +3,7 @@ import LinkedIn from "../LinkedIn";
 import mongo from "../../assets/mongo.png";
 import postgresql from "../../assets/postgresql.png";
 
-export default function Home({ logos }) {
-  // const skills = logos.map((logo, idx) => {
-  //   return <Logos logo={logo} key={`logo-${idx}`} />;
-  // });
-
+export default function Home() {
   return (
     <div className="home">
       <div className="home-left">
@@ -45,17 +41,6 @@ export default function Home({ logos }) {
             <p className="postgresql-label">PostgreSQL</p>
           </div>
         </div>
-      </div>
-      <div className="right-home-email">
-        <div className="right-home">
-          <div className="github-div">
-            <Github />
-          </div>
-          <div className="github-div">
-            <LinkedIn />
-          </div>
-        </div>
-        <h5 id="email">danielMdenton@gmail.com</h5>
       </div>
     </div>
   );

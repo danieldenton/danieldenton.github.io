@@ -15,7 +15,7 @@ export default function Navbar() {
       </Link>
       <div id="resume">
         <Link className="resume-link" to={resume} download>
-          download a resume
+          resume download
         </Link>
       </div>
     </div>

@@ -5,29 +5,24 @@
   color: white;
 }
 
-.home {
-  display: flex;
-  flex-direction: row;
-  height: 80%;
+.layout {
+  width: 100vw;
 }
-
 
 .navbar {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items:center;
-  height: 3em, 1em;
+  align-items: center;
+  width: 100%;
+  height: 3em;
   font-family: 'Barlow Semi Condensed';
 }
 
 .navbar-link {
   color: white;
   text-decoration: none;
-  font-size: 1.2em;
-  font-style: normal;
-  font-weight: 650;
-  
+  font-size: 1.2em; 
 }
 
 #resume {
@@ -36,18 +31,16 @@
   align-items: center;
   justify-content: center;
   background-color: white;
-  width: 6em;
-  height: 2.7em;
+  width: 5em;
+  height: 2.3em;
   text-align: center;
-  border-radius: 0.75em;
+  border-radius: 1.4em;
 }
 
 .resume-link {
   color: black;
   text-decoration: none;
   font-size: 0.9em;
-  font-style: normal;
-  font-weight: 650;
 }
 
 #resume:hover {
@@ -58,15 +51,49 @@
   color: red;
 }
 
+.header-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100vw;
+  font-family: 'Barlow Semi Condensed';
+}
+
+.right-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 13em;
+  height: 1.2em;
+  padding: 5em;
+  padding-top: 5.3em;
+}
+
+.right-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1em;
+  width: 20em;
+  height: 6em;
+  margin-top: .1em;
+  margin-bottom: .1em;
+ }
+
+
 header {
-  padding: 4.5em;
+  padding: 5em;
   padding-top: 2em;
+  height: 8em;
+  width: 12em;
 }
 
 .dd {
   margin: 0;
   font-size: 3em;
-  margin-top: .8em;
+  margin-top: .9em;
   font-family: 'Barlow Semi Condensed';
 }
 
@@ -76,50 +103,59 @@ header {
   font-family: 'Barlow Semi Condensed';
 }
 
-.top {
-  border: solid red 1px;
-  display: flex;
-  justify-content: space-between;
+.github {
+  text-decoration: none;
+  color: white;
+  font-size: 5em;
+  margin-right: 0.25em;
 }
 
-.contact {
-  display: flex;
-  justify-content: space-around;
-  padding-right: 4.5em;
+.github:hover {
+  color: red;
+  text-shadow: 1px 1px .5px #000000;
+}
+
+.linkedin {
+  text-decoration: none;
   color: white;
-  height: 20em;
-  border-radius: 50rem;
-  font-family: 'Barlow Semi Condensed';
+  font-size: 5em;
+  height: 1em;
+}
+
+.linkedin:hover {
+  color: red;
+  text-shadow: 1px 1px .5px #000000;
+}
+
+#email {
+  font-size: 1.5em;
+  padding-right: .7em;;
+  margin-top: .3em;
 }
 
 .footer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-end;
+  color: white;
   height: 3em;
-  text-decoration: none;
-  font-size: 1.2em;
-  font-style: normal;
-  font-weight: 650;
-  margin-top: 4vh;
+  font-size: 1em;
   font-family: 'Barlow Semi Condensed';
+  margin-right: 3em;
+  margin-top: 1.5em;
 }
 
 
 .main {
-  display: flex;
-  flex-wrap: wrap;
   font-family: 'Barlow Semi Condensed';
-  border: red solid 1px;
+  width: 100%;
 }
 
-.home {
+.home { 
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-between;
-  border: red solid 1px;
+  flex-direction: row;
+  width: 100vw;
 }
 
 .page-header {
@@ -136,24 +172,26 @@ header {
   flex-direction: row;
   width: 28em;
   height: 22em;
-  margin-left: 3em;
+  margin: 3em;
 }
 
 
 .skills {
- font-size: 4em;
- padding: 0.30em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4em;
+  padding: 0.30em;
 }
 
 #mongo {
   height: 4em;
-  margin-top: .8em;
 }
 
 #postgresql {
   height: 4em;
-  margin-top: .8em;
   margin-left: .5em;
+  margin-top: none;
 }
 
 .skill-label {
@@ -161,72 +199,71 @@ header {
 }
 
 .postgresql-label {
-  font-size: 1.1em
+  font-size: 1.1em;
+  margin-top: .7em;
 }
 
 .mongo-label {
   font-size: 1.1em;
+  margin-top: .7em;
 }
 
-.right-home {
- display: flex;
- flex-wrap: wrap;
- width: 18em;
- margin-left: 25em;
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 22em;
 }
 
-
-.github {
-  text-decoration: none;
-  color: white;
-  font-size: 7em;
-  margin: 1rem;
-  height: 1em;
+.about-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25em;
+  height: 16em;
+  margin: 5em;
+  /* border: red solid 1px; */
 }
 
-.github:hover {
-  color: red;
-  text-shadow: 1px 1px .5px #000000;
-}
-.linkedin {
-  text-decoration: none;
-  color: white;
-  font-size: 7em;
-  margin: 1rem;
-  height: 1em;
+.bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  /* border: red solid 1px; */
 }
 
-.linkedin:hover {
-  color: red;
-  text-shadow: 1px 1px .5px #000000;
+.projects-div {
+  margin-top: 3em;
 }
-
 
 .project-div {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  padding: 2em;
 }
 
 .project-imgs-div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 5vh;
 }
 
 .projects {
-  height: 22em;
-  width: 40em;
-  margin: 2vh;
+  height: 16.5em;
+  width: 30em;
+  margin: 1em;
   border: solid black 2px;
-  box-shadow: 3px 3px .1px #000000;
-  border-radius: 0.25em;
+  border-radius: 1em;
 }
 
 .projects:hover {
-  border: solid 2px rgba(255, 255, 255, 0.853);
+  border: solid 2px white;
 }
 
 .project-names {
@@ -235,59 +272,17 @@ header {
   font-size: 2.4em;
 }
 
-.project-github {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  width: 11em;
-  height: 1.5em;
+.project-github-link {
+ color: white;
+ font-size: 3.5em;
   text-align: center;
   border-radius: 1em;
 }
 
-.about-div {
-  border: solid red 1px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 20em;
-  height: 22em;
-}
-
-.bio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3vh;
-  font-weight: 550;
-  width: 60%;
-}
-
-#email {
-  margin: 1em;
-  font-size: 2em;
-  margin-left: 13em;
-}
-
-#linkedin {
-  color: black;
-  font-weight: 650;
-  font-size: 5em;
-  margin-bottom: 4vh;
-}
-
-#linkedin:hover {
+.project-github-link:hover {
   color: red;
 }
 
-.about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 
 
 
