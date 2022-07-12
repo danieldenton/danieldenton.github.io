@@ -14,7 +14,7 @@ const projects = [
   {
     name: "Deep Cut Discovery",
     image: dcdImg,
-    link: "https://deepcutdiscovery.netlify.app",
+    link: "https://github.com/danieldenton/deep-cut-discovery",
     github: "https://github.com/danieldenton/deep-cut-discovery",
     createdWith: "MongoDB, Express.js, React.js, Node.js",
   },
