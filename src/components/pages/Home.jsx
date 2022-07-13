@@ -37,7 +37,7 @@ export default function Home() {
           </div>
           <div className="skills">
             <i class="fa-brands fa-docker"></i>
-            <p className="skill-label">Docker</p>
+            <p className="docker-label">Docker</p>
           </div>
           <div className="skills">
             <img src={postgresql} alt="postgresql" id="postgresql" />

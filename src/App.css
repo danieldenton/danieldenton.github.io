@@ -219,7 +219,7 @@ header {
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
-  max-width: 30em;
+  max-width: 33em;
   height: 22em;
   margin: 2em;
   animation: fadeIn 2s;
@@ -230,7 +230,7 @@ header {
   font-size: 4rem;
   width: 5rem;
   height: 8rem;
-  margin: .3rem;
+  margin: .5rem;
 }
 
 #django {
@@ -246,6 +246,7 @@ header {
 #postgresql {
   height: 4rem;
   margin-top: .6rem;
+  margin-left: .4rem;
 }
 
 .skill-label {
@@ -257,14 +258,21 @@ header {
   margin-top: .4em;
 }
 
+.docker-label {
+  font-size: .27em;
+  margin-right: .7em;
+}
+
 .postgresql-label {
   font-size: .27em;
   margin-top: .4em;
+  margin-left: .2rem;
 }
 
 .mongo-label {
   font-size: .27em;
   margin-top: .4em;
+  margin-left: .4rem;
 }
 
 .about-div {
