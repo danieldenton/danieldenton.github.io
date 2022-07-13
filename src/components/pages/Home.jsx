@@ -1,5 +1,6 @@
 import mongo from "../../assets/mongo.png";
 import postgresql from "../../assets/postgresql.png";
+import django from "../../assets/djangologo.png"
 
 export default function Home() {
   return (
@@ -23,6 +24,10 @@ export default function Home() {
             <p className="skill-label">Python</p>
           </div>
           <div className="skills">
+            <img src={django} alt="django" id="django" />
+            <p className="django-label">Django</p>
+          </div>
+          <div className="skills">
             <i class="fa-brands fa-html5"></i>
             <p className="skill-label">HTML5</p>
           </div>
@@ -30,14 +35,19 @@ export default function Home() {
             <i class="fa-brands fa-css3-alt"></i>
             <p className="skill-label">CSS3</p>
           </div>
-          <div>
-            <img src={mongo} alt="mongodb" id="mongo" />
-            <p className="mongo-label">MongoDB</p>
+          <div className="skills">
+            <i class="fa-brands fa-docker"></i>
+            <p className="skill-label">Docker</p>
           </div>
-          <div>
+          <div className="skills">
             <img src={postgresql} alt="postgresql" id="postgresql" />
             <p className="postgresql-label">PostgreSQL</p>
           </div>
+          <div className="skills">
+            <img src={mongo} alt="mongodb" id="mongo" />
+            <p className="mongo-label">MongoDB</p>
+          </div>
+   
         </div>
       </div>
     </div>

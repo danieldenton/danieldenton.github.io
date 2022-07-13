@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -46,7 +47,7 @@ body {
 .navbar-link {
   color: white;
   text-decoration: none;
-  font-size: 1.3em; 
+  font-size: 1.3em;
 }
 
 #resume {
@@ -71,7 +72,7 @@ body {
   background-color: rgb(234, 255, 0);
 }
 
-.navbar-link:hover{
+.navbar-link:hover {
   color: rgb(234, 255, 0);
 }
 
@@ -125,11 +126,11 @@ body {
 
 
 header {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding-top: 2em;
-padding-left: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 2em;
+  padding-left: 2em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -138,7 +139,7 @@ padding-left: 2em;
     flex-direction: column;
     align-items: center;
     padding: 2em;
-    }
+  }
 }
 
 .dd {
@@ -197,7 +198,7 @@ padding-left: 2em;
   width: 100vw;
 }
 
-.home { 
+.home {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -218,42 +219,52 @@ padding-left: 2em;
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
-  max-width: 28em;
+  max-width: 30em;
   height: 22em;
   margin: 2em;
   animation: fadeIn 2s;
 }
 
 .skills {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  font-size: 4em;
-  padding: 0.30em;
+  font-size: 4rem;
+  width: 5rem;
+  height: 8rem;
+  margin: .3rem;
+}
+
+#django {
+  height: 4rem;
+  margin-top: .5rem;
 }
 
 #mongo {
-  height: 4em;
+  height: 4rem;
+  margin-top: .6rem;
 }
 
 #postgresql {
-  height: 4em;
-  margin-left: .5em;
-  margin-top: none;
+  height: 4rem;
+  margin-top: .6rem;
 }
 
 .skill-label {
   font-size: .27em;
 }
 
+.django-label {
+  font-size: .27em;
+  margin-top: .4em;
+}
+
 .postgresql-label {
-  font-size: 1.1em;
-  margin-top: .7em;
+  font-size: .27em;
+  margin-top: .4em;
 }
 
 .mongo-label {
-  font-size: 1.1em;
-  margin-top: .7em;
+  font-size: .27em;
+  margin-top: .4em;
 }
 
 .about-div {
@@ -287,6 +298,7 @@ padding-left: 2em;
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -328,15 +340,15 @@ padding-left: 2em;
 }
 
 @media only screen and (max-width: 600px) {
- .created-with {
-   max-width: 300px;
-   word-wrap: wrap;
- }
+  .created-with {
+    max-width: 300px;
+    word-wrap: wrap;
+  }
 }
 
 .project-github-link {
- color: white;
- font-size: 3.5em;
+  color: white;
+  font-size: 3.5em;
   text-align: center;
   border-radius: 2em;
 }
@@ -346,11 +358,5 @@ padding-left: 2em;
 }
 
 #oz {
- margin-top: 2em;
+  margin-top: 2em;
 }
-
-
-
-
-
-
