@@ -35,10 +35,10 @@ export default function Home() {
             <i class="fa-brands fa-css3-alt"></i>
             <p className="skill-label">CSS3</p>
           </div>
-          <div className="skills">
+          {/* <div className="skills">
             <i class="fa-brands fa-docker"></i>
             <p className="docker-label">Docker</p>
-          </div>
+          </div> */}
           <div className="skills">
             <img src={postgresql} alt="postgresql" id="postgresql" />
             <p className="postgresql-label">PostgreSQL</p>
