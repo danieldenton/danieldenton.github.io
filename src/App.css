@@ -7,7 +7,7 @@ body {
 
 body {
   background-color: black;
-  color: white;
+  color: #F5F5F5; 
   position: relative
 }
 
@@ -82,7 +82,7 @@ body {
   align-items: center;
   justify-content: space-between;
   font-family: 'Barlow Semi Condensed';
-  margin-top: 3em;
+  margin-top: 60px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -293,7 +293,8 @@ header {
   word-wrap: normal;
   font-size: 1.5em;
   padding: 20px;
-  margin-top: 4em;
+  margin-top: 20px;
+  margin-bottom: 0;
   animation: fadeIn 2s;
 }
 
@@ -363,8 +364,4 @@ header {
 
 .project-github-link:hover {
   color: rgb(234, 255, 0);
-}
-
-#oz {
-  margin-top: 2em;
 }
