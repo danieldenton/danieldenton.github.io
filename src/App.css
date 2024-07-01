@@ -319,6 +319,24 @@ header {
   justify-content: center;
 }
 
+.painNavigator-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: red solid 2px;
+}
+
+.pn-half-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.pn-halves {
+  display: flex;
+  flex-direction: row;
+}
+
 .project-imgs-div {
   display: flex;
   flex-wrap: wrap;
