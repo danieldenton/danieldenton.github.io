@@ -1,18 +1,8 @@
 import Projects from "../Projects";
+import PainNavigator from "../PainNavigator"
 
-import painNavImg from "../../assets/painnav.jpeg"
 import dcdImg from "../../assets/dcd.png"
 import dilImg from "../../assets/dil.png";
-
-const painNavigator = {
-    name: "PainNavigator",
-    image: painNavImg,
-    iOSLink: "https://apps.apple.com/us/app/painnavigator/id1631767340",
-    googlePlayLink: "https://play.google.com/store/apps/details?id=com.PainNavigator&hl=en_US",
-    mobileAppGithub: "https://github.com/danieldenton/deep-cut-discovery",
-    serverGithub: "https://github.com/danieldenton/deep-cut-discovery",
-    createdWith: "React Native, Ruby on Rails",
-}
 
 const projects = [
  
@@ -39,6 +29,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="projects-div">
+      <PainNavigator />
       <div className="project-imgs-div">{projectDivs}</div>
     </div>
   );

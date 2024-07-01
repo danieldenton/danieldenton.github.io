@@ -2,7 +2,7 @@ export default function Projects({ project }) {
   return (
     <div className="project-div">
       <h5 className="project-names">{project.name}</h5>
-      <p className="created-with">Created with {project.createdWith}</p>
+      <p className="created-with">{project.createdWith}</p>
       <div className="project-github">
         <a
           href={project.github}
