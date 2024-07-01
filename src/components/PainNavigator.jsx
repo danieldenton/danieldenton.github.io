@@ -1,4 +1,4 @@
-import painNavImg from "../assets/painnav.jpeg"
+import painNavImg from "../assets/PainNav.jpeg"
 
 
 export default function PainNavigator() {
