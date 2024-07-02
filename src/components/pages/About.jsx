@@ -8,9 +8,9 @@ export default function About() {
         confident in my ability to learn and work with new technologies.
         Currently I'm working with an early stage start up, PainNavigator, as
         their sole developer, making all technical decisions while taking into
-        account User Experience and scalability. I currently work solo but I
-        am also comfortable working on team in any role from leadership on down.
-        I pride myself on writing clean, readable and efficient code, as well as
+        account User Experience and scalability. I currently work solo but I am
+        also comfortable working on team in any role from leadership on down. I
+        pride myself on writing clean, readable and efficient code, as well as
         my problem solving skills and work ethic.
       </p>
       <p className="bio">

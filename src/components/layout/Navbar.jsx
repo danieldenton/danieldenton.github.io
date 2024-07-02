@@ -13,11 +13,9 @@ export default function Navbar() {
       <Link to="/projects" className="navbar-link">
        Projects
       </Link>
-      <div id="resume">
-        <Link className="resume-link" to={resume} download>
-          Resumé
-        </Link>
-      </div>
+      <a className="navbar-link"  href="/DanielDenton_resume2024.pdf" download="DanielDenton_resume2024.pdf">
+        Resume
+      </a>
     </div>
   );
 }

@@ -45,7 +45,7 @@ body {
 }
 
 .navbar-link {
-  color: white;
+  color: #F5F5F5;;
   text-decoration: none;
   font-size: 1.3em;
 }
@@ -55,7 +55,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: #F5F5F5;;
   width: 5em;
   height: 1.5em;
   text-align: center;
@@ -323,18 +323,25 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  border: red solid 2px;
-}
-
-.pn-half-div {
-  display: flex;
-  flex-direction: column;
+ margin-bottom: 100px;
 }
 
 .pn-halves {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  
+}
+
+.pn-half-div {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.pn-link-container {
 }
 
 .project-imgs-div {
@@ -351,6 +358,12 @@ header {
   border-radius: 1em;
 }
 
+.pn-image {
+  height: 500px;
+  border: solid black 2px;
+  border-radius: 1em;
+}
+
 .projects:hover {
   border: solid 2px rgb(234, 255, 0);
 }
@@ -360,9 +373,18 @@ header {
   margin-bottom: .3em;
   font-size: 1.5em;
 }
+.pn-name {
+  margin-top: 1em;
+  margin-bottom: 3px;
+  font-size: 40px;
+}
 
 .created-with {
   font-size: 1.3em;
+}
+.pn-created-with {
+  font-size: 25px;
+  margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -373,12 +395,15 @@ header {
 }
 
 .project-github-link {
-  color: white;
+  color:#F5F5F5;
   font-size: 3.5em;
   text-align: center;
   border-radius: 2em;
 }
 
 .project-github-link:hover {
+  color: rgb(234, 255, 0);
+}
+.pn-github-link:hover {
   color: rgb(234, 255, 0);
 }

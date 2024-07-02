@@ -30,6 +30,7 @@ export default function ProjectsPage() {
   return (
     <div className="projects-div">
       <PainNavigator />
+      <h5 className="pn-name">Older Projects</h5>
       <div className="project-imgs-div">{projectDivs}</div>
     </div>
   );
