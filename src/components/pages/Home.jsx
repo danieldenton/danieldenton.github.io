@@ -3,8 +3,9 @@ import postgresql from "../../assets/postgresql.png";
 import django from "../../assets/djangologo.png";
 import typeScript from "../../assets/ts.jpeg";
 import ethereum from "../../assets/etherum.png";
-import ruby from "../../assets/ruby.png"
-import rails from "../../assets/rails.png"
+import ruby from "../../assets/ruby.png";
+import rails from "../../assets/rails.png";
+import expo from "../../assets/Expo.png";
 
 export default function Home() {
   return (
@@ -43,14 +44,20 @@ export default function Home() {
             <img src={rails} alt="rails" id="rails" />
             <p className="mongo-label">Rails</p>
           </div>
+
           <div className="skills">
-          <i class="fa-brands fa-golang"></i>
+            <img src={expo} alt="expo" id="expo" />
+            <p className="postgresql-label">Expo Go</p>
+          </div>
+          <div className="skills">
+            <i class="fa-brands fa-golang"></i>
             <p className="skill-label">Go</p>
           </div>
           <div className="skills">
             <img src={postgresql} alt="postgresql" id="postgresql" />
             <p className="postgresql-label">PostgreSQL</p>
           </div>
+
           <div className="skills">
             <img src={mongo} alt="mongodb" id="mongo" />
             <p className="mongo-label">MongoDB</p>
