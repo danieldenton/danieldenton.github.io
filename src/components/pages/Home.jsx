@@ -1,6 +1,10 @@
 import mongo from "../../assets/mongo.png";
 import postgresql from "../../assets/postgresql.png";
-import django from "../../assets/djangologo.png"
+import django from "../../assets/djangologo.png";
+import typeScript from "../../assets/ts.jpeg";
+import ethereum from "../../assets/etherum.png";
+import ruby from "../../assets/ruby.png"
+import rails from "../../assets/rails.png"
 
 export default function Home() {
   return (
@@ -9,15 +13,19 @@ export default function Home() {
         <div className="skills-div">
           <div className="skills">
             <i className="fa-brands fa-react"></i>
-            <p className="skill-label">React.js</p>
+            <p className="skill-label">React</p>
           </div>
           <div className="skills">
-            <i className="fa-brands fa-js-square"></i>
-            <p className="skill-label">JavaScript</p>
+            <img src={typeScript} alt="typeScript" id="ts" />
+            <p className="typescript-label">TypeScript</p>
           </div>
           <div className="skills">
             <i class="fa-brands fa-node-js"></i>
             <p className="skill-label">Node.js</p>
+          </div>
+          <div className="skills">
+            <img src={ethereum} alt="solidity" id="solidity" />
+            <p className="solidity-label">Solidity</p>
           </div>
           <div className="skills">
             <i class="fa-brands fa-python"></i>
@@ -28,17 +36,17 @@ export default function Home() {
             <p className="django-label">Django</p>
           </div>
           <div className="skills">
-            <i class="fa-brands fa-html5"></i>
-            <p className="skill-label">HTML5</p>
+            <img src={ruby} alt="ruby" id="ruby" />
+            <p className="ruby-label">Ruby</p>
           </div>
           <div className="skills">
-            <i class="fa-brands fa-css3-alt"></i>
-            <p className="skill-label">CSS3</p>
+            <img src={rails} alt="rails" id="rails" />
+            <p className="mongo-label">Rails</p>
           </div>
-          {/* <div className="skills">
-            <i class="fa-brands fa-docker"></i>
-            <p className="docker-label">Docker</p>
-          </div> */}
+          <div className="skills">
+          <i class="fa-brands fa-golang"></i>
+            <p className="skill-label">Go</p>
+          </div>
           <div className="skills">
             <img src={postgresql} alt="postgresql" id="postgresql" />
             <p className="postgresql-label">PostgreSQL</p>
@@ -47,7 +55,6 @@ export default function Home() {
             <img src={mongo} alt="mongodb" id="mongo" />
             <p className="mongo-label">MongoDB</p>
           </div>
-   
         </div>
       </div>
     </div>
