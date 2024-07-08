@@ -1,6 +1,6 @@
 import painNavImg from "../assets/PainNav.jpeg";
 import painNavImg2 from "../assets/PainNav2.jpeg";
-import painNavImg3 from "../assets/PainNav3.jpeg"
+import painNavImg3 from "../assets/PainNav3.jpeg";
 
 export default function PainNavigator() {
   const painNavigator = {
@@ -11,11 +11,14 @@ export default function PainNavigator() {
     mobileAppGithub: "https://github.com/painnavigator/painnavigator-mobile",
     serverGithub: "https://github.com/painnavigator/pain-navigator-mobile-api",
     createdWith: "React Native, Ruby on Rails",
+    description:
+      "PainNavigator is a physical therapy app for people dealing with chronic pain. It leverages the Cloudinary platform for hosting the videos which it streams. The app also tracks a users progress with their pain management as well as provides access to a wellness coach for in app support.",
   };
   return (
     <div className="painNavigator-div">
       <h5 className="pn-name">{painNavigator.name}</h5>
       <p className="pn-created-with">{painNavigator.createdWith}</p>
+      <p className="pn-created-with" style={{ marginTop: "5px"}}>{painNavigator.description}</p>
       <div className="pn-halves">
         <div className="pn-half-div">
           <img className="pn-image" src={painNavImg2} alt="PainNavigator" />

@@ -184,7 +184,7 @@ header {
   font-size: 1.2em;
   font-family: "Barlow Semi Condensed";
   margin-right: 3em;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .main {
@@ -333,8 +333,11 @@ header {
 }
 
 .projects-div {
-  margin-top: 3em;
+  margin-top: 50px;
   animation: fadeIn 2s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @keyframes fadeIn {
@@ -345,6 +348,20 @@ header {
   to {
     opacity: 1;
   }
+}
+
+.older-projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-div {

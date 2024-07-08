@@ -1,11 +1,10 @@
 import Projects from "../Projects";
-import PainNavigator from "../PainNavigator"
+import PainNavigator from "../PainNavigator";
 
-import dcdImg from "../../assets/dcd.png"
+import dcdImg from "../../assets/dcd.png";
 import dilImg from "../../assets/dil.png";
 
 const projects = [
- 
   {
     name: "Deep Cut Discovery",
     image: dcdImg,
@@ -19,19 +18,27 @@ const projects = [
     link: "https://dayinthelife.netlify.app",
     github: "https://github.com/danieldenton/day-in-life-client",
     createdWith: "MongoDB, Express.js, React.js, Node.js",
-  }
+  },
 ];
 
 export default function ProjectsPage() {
   const projectDivs = projects.map((project, idx) => {
-    return <Projects project={project} key={`project-${idx}`} />;
+    return (
+      <Projects
+        className="project-imgs-div"
+        project={project}
+        key={`project-${idx}`}
+      />
+    );
   });
 
   return (
     <div className="projects-div">
       <PainNavigator />
-      <h5 className="pn-name">Older Projects</h5>
-      <div className="project-imgs-div">{projectDivs}</div>
+      <div className="older-projects">
+        <h5 className="pn-name">Older Projects</h5>
+        <div className="inline">{projectDivs}</div>
+      </div>
     </div>
   );
 }
