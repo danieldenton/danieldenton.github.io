@@ -12,13 +12,20 @@ export default function PainNavigator() {
     serverGithub: "https://github.com/painnavigator/pain-navigator-mobile-api",
     createdWith: "React Native, Ruby on Rails",
     description:
-      "PainNavigator is a physical therapy app for people dealing with chronic pain. It leverages the Cloudinary platform for hosting the videos which it streams. The app also tracks a users progress with their pain management as well as provides access to a wellness coach for in app support.",
+      "PainNavigator is a physical therapy app for people dealing with chronic pain. It leverages the Cloudinary platform for hosting the videos which it streams. The app also tracks a users progress with their pain management with a Daily Pain Score, SMART Goals as well as Pain Journals. The app also provides access to a wellness coach for in app support.",
+    description2:
+      "If you would like to check out the app please contact me at danielmdenton@gmail.com for a login email and password.",
   };
   return (
     <div className="painNavigator-div">
       <h5 className="pn-name">{painNavigator.name}</h5>
       <p className="pn-created-with">{painNavigator.createdWith}</p>
-      <p className="pn-created-with" style={{ marginTop: "5px"}}>{painNavigator.description}</p>
+      <p className="pn-created-with" style={{ marginTop: "5px" }}>
+        {painNavigator.description}
+      </p>
+      <p className="pn-created-with" style={{ marginTop: "5px" }}>
+        {painNavigator.description2}
+      </p>
       <div className="pn-halves">
         <div className="pn-half-div">
           <img className="pn-image" src={painNavImg2} alt="PainNavigator" />

@@ -13,7 +13,7 @@ export default function Home() {
       <div className="home-left">
         <div className="skills-div">
           <div className="skills">
-            <i className="fa-brands fa-react"></i>
+            <i className="fa-brands fa-react skill-img"></i>
             <p className="skill-label">React</p>
           </div>
           <div className="skills">
