@@ -1,30 +1,30 @@
 import Projects from "../Projects";
-import PainNavigator from "../PainNavigator";
 
-import dcdImg from "../../assets/dcd.png";
-import dilImg from "../../assets/dil.png";
+import dexAgg from "../../assets/DexAgg.pngpng";
+import cloudSwap from "../../assets/CloudSwap.png";
+import BMSwap from "../../assets/BMSwap.png";
 
 const projects = [
   {
     name: "Dex Aggregator",
-    image: dcdImg,
-    link: "https://deepcutdiscovery.netlify.app/",
-    github: "https://github.com/danieldenton/deep-cut-discovery",
-    createdWith: "MongoDB, Express.js, React.js, Node.js",
+    image: dexAgg,
+    link: "https://dex-agg1.netlify.app/",
+    github: "https://github.com/danieldenton/dex-aggregator",
+    createdWith: "Solidity, Hardhat, Ethers.js, React, TypeScript",
   },
   {
     name: "Cloud Swap",
-    image: dilImg,
-    link: "https://dayinthelife.netlify.app",
-    github: "https://github.com/danieldenton/day-in-life-client",
-    createdWith: "MongoDB, Express.js, React.js, Node.js",
+    image: cloudSwap,
+    link: "https://cloud-swap.netlify.app/",
+    github: "https://github.com/danieldenton/cloud-swap",
+    createdWith: "Solidity, Hardhat, Ethers.js, React, TypeScript",
   },
   {
     name: "Blood Moon Swap",
-    image: dilImg,
-    link: "https://dayinthelife.netlify.app",
-    github: "https://github.com/danieldenton/day-in-life-client",
-    createdWith: "MongoDB, Express.js, React.js, Node.js",
+    image: BMSwap,
+    link: "https://blood-moon-swap.netlify.app/",
+    github: "https://github.com/danieldenton/blood-moon-swap",
+    createdWith: "Solidity, Hardhat, Ethers.js, React",
   },
 ];
 
