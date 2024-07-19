@@ -4,6 +4,7 @@ import Layout from "./components/layout/Layout";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import ProjectsPage from "./components/pages/ProjectsPage";
+import Web3Page from "./components/pages/Web3";
 
 export default function App() {
   return (
@@ -16,6 +17,10 @@ export default function App() {
             <Route
               path="/projects"
               element={<ProjectsPage />}
+            />
+            <Route
+              path="/web3"
+              element={<Web3Page />}
             />
           </Routes>
         </Layout>

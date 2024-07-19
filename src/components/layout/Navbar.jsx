@@ -13,6 +13,9 @@ export default function Navbar() {
       <Link to="/projects" className="navbar-link">
        Projects
       </Link>
+      <Link to="/web3" className="navbar-link">
+       Web3
+      </Link>
       <a className="navbar-link"  href="/DanielDenton_resume2024.pdf" download="DanielDenton_resume2024.pdf">
         Resume
       </a>

@@ -1,6 +1,6 @@
 import Projects from "../Projects";
 
-import dexAgg from "../../assets/DexAgg.pngpng";
+import dexAgg from "../../assets/DexAgg.png";
 import cloudSwap from "../../assets/CloudSwap.png";
 import BMSwap from "../../assets/BMSwap.png";
 
