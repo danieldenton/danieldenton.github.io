@@ -43,6 +43,12 @@ export default function Web3Page() {
     <div className="projects-div">
       <div className="older-projects">
         <h5 className="pn-name">Web3 Projects</h5>
+        <p className="pn-created-with" style={{ marginTop: "5px" }}>
+          The contracts for the 3 below projects are deployed on the Eth-Sepolia
+          test network. Because these projects handle tokens I created
+          specifically for them, I will be posting video demos of them in action
+          with explanations by Monday 7/22/2024.
+        </p>
         <div className="inline">{projectDivs}</div>
       </div>
     </div>

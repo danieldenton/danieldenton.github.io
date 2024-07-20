@@ -317,6 +317,11 @@ header {
   margin-left: 0.4rem;
 }
 
+.headshot {
+  height: 150px;
+  border-radius: 100%;
+}
+
 .about-div {
   display: flex;
   flex-wrap: wrap;
@@ -376,6 +381,7 @@ header {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin: 0 25px;
 }
 
 .painNavigator-div {

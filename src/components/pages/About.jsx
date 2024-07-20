@@ -1,6 +1,9 @@
+import headshot from "../../assets/headshot.png"
+
 export default function About() {
   return (
     <>
+    <img src={headshot} alt="head shot" className="headshot" />
       <p className="bio">
         I'm a full stack developer currently working with React Native and Ruby
         on Rails, however I'm comfortable working with a variety of languages,
