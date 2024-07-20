@@ -14,14 +14,8 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route
-              path="/projects"
-              element={<ProjectsPage />}
-            />
-            <Route
-              path="/web3"
-              element={<Web3Page />}
-            />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/web3" element={<Web3Page />} />
           </Routes>
         </Layout>
       </Router>

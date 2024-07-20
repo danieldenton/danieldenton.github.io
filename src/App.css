@@ -320,6 +320,7 @@ header {
 .headshot {
   height: 150px;
   border-radius: 100%;
+  animation: fadeIn 2s;
 }
 
 .about-div {
@@ -339,8 +340,6 @@ header {
   align-items: center;
   word-wrap: normal;
   font-size: 1.5em;
-  padding: 20px;
-  margin-top: 30px;
   animation: fadeIn 2s;
 }
 
