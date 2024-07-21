@@ -47,7 +47,7 @@ export default function Web3Page() {
           The contracts for the 3 below projects are deployed on the Eth-Sepolia
           test network. Because these projects handle tokens I created
           specifically for them, I will be posting video demos of them in action
-          with explanations by Monday 7/22/2024.
+          with explanations shortly.
         </p>
         <div className="inline">{projectDivs}</div>
       </div>
