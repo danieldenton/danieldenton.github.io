@@ -460,6 +460,7 @@ header {
   font-size: 3.5em;
   text-align: center;
   border-radius: 2em;
+  
 }
 
 .project-github-link:hover {
@@ -468,3 +469,16 @@ header {
 .pn-github-link:hover {
   color: rgb(234, 255, 0);
 }
+
+
+.project-youtube-link:hover {
+  color: rgb(234, 255, 0);
+}
+.project-youtube-link {
+  color: #f5f5f5;
+  font-size: 17px;
+  text-align: center;
+  border-radius: 2em;
+  margin-right: 10px;
+}
+

@@ -9,6 +9,7 @@ const projects = [
     name: "Dex Aggregator",
     image: dexAgg,
     link: "https://dex-agg1.netlify.app/",
+    youtube1: "https://www.youtube.com/watch?v=NFQ12ekqSH0",
     github: "https://github.com/danieldenton/dex-aggregator",
     createdWith: "Solidity, Hardhat, Ethers.js, React, TypeScript",
   },
@@ -46,8 +47,8 @@ export default function Web3Page() {
         <p className="pn-created-with" style={{ marginTop: "5px" }}>
           The contracts for the 3 below projects are deployed on the Eth-Sepolia
           test network. Because these projects handle tokens I created
-          specifically for them, I will be posting video demos of them in action
-          with explanations shortly.
+          specifically for them, there are, or will be, video explantions. Click
+          the YouTube logo to see them.
         </p>
         <div className="inline">{projectDivs}</div>
       </div>
