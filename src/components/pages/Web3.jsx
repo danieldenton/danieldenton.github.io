@@ -48,7 +48,7 @@ export default function Web3Page() {
           The contracts for the 3 below projects are deployed on the Eth-Sepolia
           test network. Because these projects handle tokens I created
           specifically for them, there are, or will be, video explantions. Click
-          the YouTube logo to see them.
+          the YouTube logos to see them.
         </p>
         <div className="inline">{projectDivs}</div>
       </div>
