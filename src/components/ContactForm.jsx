@@ -1,5 +1,9 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Card from "react-bootstrap/Card"
+import Form from "react-bootstrap/Form"
+import Row from "react-bootstrap/Row"
+import InputGroup from "react-bootstrap/InputGroup"
 
 export const ContactForm = () => {
   const form = useRef();
