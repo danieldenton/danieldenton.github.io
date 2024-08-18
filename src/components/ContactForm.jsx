@@ -1,62 +1,35 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
-const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    email: '',
-    message: ''
-  });
+export const ContactForm = () => {
+  const form = useRef();
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    window.emailjs.send(
-      'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-      'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
-      formData
-    )
-    .then((result) => {
-      console.log(result.text);
-      alert('Message sent successfully!');
-    }, (error) => {
-      console.log(error.text);
-      alert('Failed to send the message, please try again.');
-    });
-
-    setFormData({
-      email: '',
-      message: ''
-    });
+    emailjs
+      .sendForm('service_rj9lbxe', 'YOUR_TEMPLATE_ID', form.current, {
+        publicKey: 'YOUR_PUBLIC_KEY',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Email:</label>
-        <input 
-          type="email" 
-          name="email" 
-          value={formData.email} 
-          onChange={handleChange} 
-          required 
-        />
-      </div>
-      <div>
-        <label>Message:</label>
-        <textarea 
-          name="message" 
-          value={formData.message} 
-          onChange={handleChange} 
-          required 
-        />
-      </div>
-      <button type="submit">Send</button>
+    <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
     </form>
   );
 };
-
-export default ContactForm;
