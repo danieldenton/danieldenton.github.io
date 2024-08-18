@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export const ContactForm = () => {
   const form = useRef();
@@ -8,16 +8,16 @@ export const ContactForm = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_rj9lbxe', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
+      .sendForm("service_rj9lbxe", "template_5tdcrwf", form.current, {
+        publicKey: "tkNcmbiASi0TUZpR7",
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          console.log("SUCCESS!");
         },
         (error) => {
-          console.log('FAILED...', error.text);
-        },
+          console.log("FAILED...", error.text);
+        }
       );
   };
 
