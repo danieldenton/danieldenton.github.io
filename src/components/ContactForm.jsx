@@ -35,7 +35,6 @@ export const ContactForm = () => {
         backgroundColor: "black",
         border: "solid 3px white",
         borderRadius: "10px",
-        height: "398px",
       }}
       className="mx-auto px-4"
     >
@@ -47,35 +46,44 @@ export const ContactForm = () => {
           ref={form}
           style={{ maxWidth: "450px", margin: "50px auto" }}
         >
-          <Row>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Name</Form.Label>
-              <Form.Control type="text" name="name" />
-            </Form.Group>
-          </Row>
-          <Row>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email</Form.Label>
-              <Form.Control type="email" name="email" />
-            </Form.Group>
-          </Row>
-          <Row>
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
-              <Form.Label>Message</Form.Label>
-              <Form.Control type="text" name="message" />
-            </Form.Group>
-          </Row>
+          <Form.Group className="mb-3" style={{ marginBottom: '10px'}} controlId="exampleForm.ControlInput1">
+            <Form.Label style={{ fontStyle: 'bold'}}>Name</Form.Label>
+            <Form.Control
+              type="text"
+              name="name"
+              style={{ width: "95%", height: "28px", borderRadius: "5px" }}
+            />
+          </Form.Group>
+
+          <Form.Group className="mb-3" style={{ marginBottom: '10px'}} controlId="exampleForm.ControlInput1">
+            <Form.Label>Email</Form.Label>
+            <Form.Control
+              type="email"
+              name="email"
+              style={{ width: "95%", height: "28px", borderRadius: "5px" }}
+            />
+          </Form.Group>
+
+          <Form.Group className="mb-3" style={{ marginBottom: '10px'}} controlId="exampleForm.ControlTextarea1">
+            <Form.Label>Message</Form.Label>
+            <Form.Control
+              type="text"
+              name="message"
+              as="textarea"
+              rows={8}
+              style={{ width: "95%", borderRadius: '5px'}} 
+            />
+          </Form.Group>
+
           <Button
             type="submit"
             className="fw-bold"
             style={{
-              backgroundColor: "#D8BFD8",
+              backgroundColor: "white",
+              width: "96%",
+              height: "40px",
               color: "purple",
-              border: "solid purple 2px",
-              borderRadius: "5px",
+              borderRadius: "7px",
               marginTop: "15px",
             }}
           >

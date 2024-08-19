@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 export default function Github() {
   return (
     <a
@@ -8,7 +6,7 @@ export default function Github() {
       href="https://github.com/danieldenton"
       className="github"
     >
-      <FontAwesomeIcon icon="fa-brands fa-square-github" style={{color: "white"}}/>
+      <i class="fa-brands fa-github-square"></i>
     </a>
   );
 }
