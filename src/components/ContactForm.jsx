@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
+import Alert from "react-bootstrap/Alert";
 
 export const ContactForm = () => {
   const [messageSent, setMessageSent] = useState(false);
@@ -39,7 +40,7 @@ export const ContactForm = () => {
       className="mx-auto px-4"
     >
       {messageSent ? (
-        <></>
+        <Alert variant="success">Message Sent!</Alert>
       ) : (
         <Form
           onSubmit={sendEmail}
