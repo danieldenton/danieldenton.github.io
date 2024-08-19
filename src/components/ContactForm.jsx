@@ -10,8 +10,7 @@ export const ContactForm = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault();
-
+    e.preventDefault()
     emailjs
       .sendForm("service_rj9lbxe", "template_5tdcrwf", form.current, {
         publicKey: "tkNcmbiASi0TUZpR7",
@@ -30,7 +29,7 @@ export const ContactForm = () => {
   return (
     <Card
       style={{
-        maxWidth: "500px",
+        width: "500px",
         backgroundColor: "black",
         border: "solid 3px white",
         borderRadius: "10px",
