@@ -10,7 +10,7 @@ export const ContactForm = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     emailjs
       .sendForm("service_rj9lbxe", "template_5tdcrwf", form.current, {
         publicKey: "tkNcmbiASi0TUZpR7",
@@ -30,6 +30,7 @@ export const ContactForm = () => {
     <Card
       style={{
         width: "500px",
+        height: "480px",
         backgroundColor: "black",
         border: "solid 3px white",
         borderRadius: "10px",
@@ -37,7 +38,15 @@ export const ContactForm = () => {
       className="mx-auto px-4"
     >
       {messageSent ? (
-        <Alert variant="success">Message Sent!</Alert>
+        <div
+          variant="success"
+          style={{
+            width: "500px",
+            height: "480px",
+          }}
+        >
+          <p style={{ fontSize: "30px", marginTop: '190px' }}>Message Sent!</p>
+        </div>
       ) : (
         <Form
           onSubmit={sendEmail}
@@ -81,10 +90,7 @@ export const ContactForm = () => {
             />
           </Form.Group>
 
-          <Button
-            type="submit"
-            className="fw-bold form-button"
-          >
+          <Button type="submit" className="fw-bold form-button">
             Send
           </Button>
         </Form>
