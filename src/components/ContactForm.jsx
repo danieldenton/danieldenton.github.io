@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
-import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import Alert from "react-bootstrap/Alert";
 
@@ -52,16 +51,7 @@ export const ContactForm = () => {
             controlId="exampleForm.ControlInput1"
           >
             <Form.Label style={{ fontWeight: "bold" }}>Name</Form.Label>
-            <Form.Control
-              type="text"
-              name="name"
-              style={{
-                marginTop: "5px",
-                width: "95%",
-                height: "28px",
-                borderRadius: "5px",
-              }}
-            />
+            <Form.Control type="text" name="name" className="input" />
           </Form.Group>
 
           <Form.Group
@@ -72,16 +62,7 @@ export const ContactForm = () => {
             <Form.Label style={{ fontWeight: "bold", marginBottom: "7px" }}>
               Email
             </Form.Label>
-            <Form.Control
-              type="email"
-              name="email"
-              style={{
-                marginTop: "5px",
-                width: "95%",
-                height: "28px",
-                borderRadius: "5px",
-              }}
-            />
+            <Form.Control type="email" name="email" className="input" />
           </Form.Group>
 
           <Form.Group
@@ -97,21 +78,13 @@ export const ContactForm = () => {
               name="message"
               as="textarea"
               rows={8}
-              style={{ marginTop: "5px", width: "95%", borderRadius: "5px" }}
+              className="message-input"
             />
           </Form.Group>
 
           <Button
             type="submit"
-            className="fw-bold"
-            style={{
-              backgroundColor: "rgb(234, 255, 0)",
-              width: "96%",
-              height: "40px",
-              color: "black",
-              borderRadius: "7px",
-              marginTop: "15px",
-            }}
+            className="fw-bold form-button"
           >
             Send
           </Button>
